@@ -186,7 +186,7 @@ CALLMANAGER EXPRESS CONFIGURATION FOR VOIP/TELEPHONY ENGINEERS
 !@@@CUCM-M
 config t
    hostname CUCM-31
-   enable secret pass
+   enable secret pass 
    service password-encryption
    no logging console
    no ip domain-lookup
@@ -250,12 +250,12 @@ ephone-dn 8
 ephone-dn 10
  number 3198
 Ephone 1
-  Mac-address cafe.face.baba
+  Mac-address 6cfa.8972.f0a9
   type 8945
   button 1:8 2:7 3:6 4:5
   restart
 Ephone 2
-  Mac-address fafa.caca.baba
+  Mac-address ccd8.c1fb.10dd
   type 8945
   button 1:4 2:3 3:2 4:1
   restart  
@@ -348,6 +348,16 @@ dial-peer voice 82 Voip
  destination-pattern 82..
  session target ipv4:10.82.100.8
  codec g711ULAW
+dial-peer voice 91 Voip
+ destination-pattern 82..
+ session target ipv4:10.82.100.8
+ codec g711ULAW
+dial-peer voice 91 Voip
+ destination-pattern 82..
+ session target ipv4:10.82.100.8
+ codec g711ULAW
+
+
 
 TASK3***TASK3***TASK3***
 TASK3***TASK3***TASK3***
@@ -643,4 +653,5 @@ exit
           
 sip-ua
 sip-server ipv4:192.168.k.1
+
 
